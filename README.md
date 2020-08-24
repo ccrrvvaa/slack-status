@@ -19,5 +19,9 @@ This python script changes profile status for one or many of your Slack accounts
   - `ln -s $(pwd)/almorzando.sh /home/myuser/almorzando`
 - Create a link for returning from lunch script
   - `ln -s $(pwd)/regreso.sh /home/myuser/regreso`
+ 
+## Execution
+- To have lunch: `cd ~ && ./almorzando`
+- To return from lunch: `cd ~ && ./regreso`
 
 Note: This steps are made for Linux users
