@@ -1,3 +1,5 @@
+This python script changes profile status for one or many of your Slack accounts. 
+
 ## Create a Slack App
 - Go to [https://api.slack.com/apps]
 - Create a new app ("Status App")
@@ -8,9 +10,13 @@
 ## Create executable Links
 - Install Python 3
 - Install dependencies: `python3 -m pip install -r requirements.txt`
-- Make `almorzando.sh` and `regreso.sh` exeutable files: `sudo chmod +x almorzando.sh regreso.sh`
-- Create a link for lunch (in my case, in my home directory)
-  - `ln -s $(pwd)/almorzando.sh /home/youruser/almorzando`
-- Create a link for finish lunching
-  - `ln -s $(pwd)/regreso.sh /home/youruser/regreso`
+- Set executable permissions for bash scripts: `sudo chmod +x almorzando.sh regreso.sh`
+- Copy the file `.env.tmp` as a new file with the name: `.env`
+- Put your slack tokens in this file `.env`
+- Edit the file lunch.py to put only the token's names (from `.env`) that you want to use
+- Create a link for lunch status script (in my case, my home directory)
+  - `ln -s $(pwd)/almorzando.sh /home/myuser/almorzando`
+- Create a link for returning from lunch script
+  - `ln -s $(pwd)/regreso.sh /home/myuser/regreso`
 
+Note: This steps are made for Linux users
