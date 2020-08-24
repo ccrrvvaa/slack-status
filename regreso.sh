@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/cesar/Work/Caleidos/scripts/slack/
+cd /path/to/script/
 python3 lunch.py finish
